@@ -1,0 +1,48 @@
+﻿@model databases.Models.detail
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@using (Html.BeginForm("Mod","Home"))
+{
+    <label>
+        studentId
+    </label>
+
+    @Html.TextBoxFor(model=>Model.studentId)
+    <br>
+    <br>
+
+<label>FirstName
+</label>
+
+@Html.TextBoxFor(model=>Model.FirstName)
+
+<br>
+<br>
+
+    <label>
+        LastName
+    </label>
+
+    @Html.TextBoxFor(model=>Model.LastName)
+    <br>
+    <br>
+    <label>
+        EmailId
+    </label>
+
+    @Html.TextBoxFor(model=>Model.EmailId)
+    <br>
+    <br>
+    <label>
+       Address
+    </label>
+
+    @Html.TextAreaFor(model=>Model.Address)
+    <br>
+    <br>
+    <input type="submit" value="submit" />
+
+}
